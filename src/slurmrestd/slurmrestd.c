@@ -296,7 +296,7 @@ static void _examine_stdout(void)
 static void _setup_logging(int argc, char **argv)
 {
 	/* Default to logging as a daemon */
-	log_options_t logopt = LOG_OPTS_INITIALIZER;
+	log_options_t logopt = LOG_OPTS_SYSLOG_DEFAULT;
 	log_facility_t fac = SYSLOG_FACILITY_DAEMON;
 
 	/*
